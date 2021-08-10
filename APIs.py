@@ -30,7 +30,7 @@ def list_of_kvm(env):
 
 def http_req(url):
     try:
-        r = requests.get(url, auth=('elango.dhanasekaran1@t-mobile.com', '$Apigee2021#'), timeout=(20, 20))
+        r = requests.get(url, auth=('<Email>', '<PWD>'), timeout=(20, 20))
         print(r.raise_for_status())
         response = r.json()
     except requests.exceptions.HTTPError as errh:
